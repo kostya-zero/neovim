@@ -4,12 +4,35 @@ return {
         enabled = false,
     },
     {
+        "catppuccin",
+        enabled = false,
+    },
+    {
         "wtfox/jellybeans.nvim",
         lazy = false,
-        priority = 1000,
-        opts = {}, -- Optional
-        config = function()
-            vim.cmd("colorscheme jellybeans-mono")
-        end,
+        enabled = true,
+        priority = 1100,
+        opts = {
+            background = {
+                dark = "jellybeans_muted",
+                light = "jellybeans_muted_light",
+            },
+        },
+    },
+    {
+        "vague2k/vague.nvim",
+        enabled = false,
+        lazy = false,
+    },
+    {
+        "zenbones-theme/zenbones.nvim",
+        enabled = false,
+        dependencies = "rktjmp/lush.nvim",
+        lazy = false,
+    },
+    {
+        "webhooked/kanso.nvim",
+        enabled = false,
+        lazy = false,
     },
 }

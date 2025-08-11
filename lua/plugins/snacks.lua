@@ -14,6 +14,13 @@ return {
                 { section = "startup" },
             },
         }
+        opts.explorer = {
+            enabled = false,
+        }
+        opts.scroll = {
+            enabled = false,
+        }
+        opts.notifier.style = "minimal"
         return opts
     end,
 }

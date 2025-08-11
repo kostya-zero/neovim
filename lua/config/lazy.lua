@@ -18,7 +18,7 @@ vim.opt.rtp:prepend(lazypath)
 ---@type LazyConfig
 require("lazy").setup({
     spec = {
-        { "LazyVim/LazyVim", import = "lazyvim.plugins", opts = { colorscheme = "jellybeans-mono" } },
+        { "LazyVim/LazyVim", import = "lazyvim.plugins", opts = { colorscheme = "jellybeans" } },
         { import = "lazyvim.plugins.extras.ai.copilot" },
         { import = "lazyvim.plugins.extras.dap.core" },
         { import = "lazyvim.plugins.extras.editor.outline" },
@@ -28,14 +28,15 @@ require("lazy").setup({
         { import = "lazyvim.plugins.extras.lang.go" },
         { import = "lazyvim.plugins.extras.lang.json" },
         { import = "lazyvim.plugins.extras.lang.markdown" },
-        { import = "lazyvim.plugins.extras.lang.nushell" },
-        { import = "lazyvim.plugins.extras.lang.prisma" },
+        -- { import = "lazyvim.plugins.extras.editor.mini-files" },
+        -- { import = "lazyvim.plugins.extras.lang.nushell" },
+        -- { import = "lazyvim.plugins.extras.lang.prisma" },
         { import = "lazyvim.plugins.extras.lang.rust" },
-        { import = "lazyvim.plugins.extras.lang.sql" },
+        -- { import = "lazyvim.plugins.extras.lang.sql" },
         { import = "lazyvim.plugins.extras.lang.tailwind" },
         { import = "lazyvim.plugins.extras.lang.toml" },
         { import = "lazyvim.plugins.extras.lang.typescript" },
-        { import = "lazyvim.plugins.extras.lang.yaml" },
+        -- { import = "lazyvim.plugins.extras.lang.yaml" },
         { import = "lazyvim.plugins.extras.linting.eslint" },
         { import = "lazyvim.plugins.extras.test.core" },
         { import = "plugins" },
@@ -52,11 +53,12 @@ require("lazy").setup({
             not_loaded = "",
         },
     },
-    install = { colorscheme = { "jellybeans-mono", "habamax" } },
+    install = { colorscheme = { "jellybeans", "habamax" } },
     checker = {
         enabled = true, -- check for plugin updates periodically
         notify = false, -- notify on update
     }, -- automatically check for plugin updates
+    debug = false,
     performance = {
         cache = {
             enabled = true,
