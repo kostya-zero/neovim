@@ -19,20 +19,4 @@ return {
             },
         },
     },
-    {
-        "vague2k/vague.nvim",
-        enabled = false,
-        lazy = false,
-    },
-    {
-        "zenbones-theme/zenbones.nvim",
-        enabled = false,
-        dependencies = "rktjmp/lush.nvim",
-        lazy = false,
-    },
-    {
-        "webhooked/kanso.nvim",
-        enabled = false,
-        lazy = false,
-    },
 }
