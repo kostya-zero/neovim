@@ -5,7 +5,7 @@ vim.o.guifont = "Lilex Nerd Font Mono: h12"
 
 vim.g.snacks_animate = false
 vim.g.lazyvim_prettier_needs_config = true
--- vim.g.lazyvim_picker = ""
+-- vim.g.lazyvim_picker = "telescope"
 vim.g.lazyvim_cmp = "blink.cmp"
 
 -- Hide tildas
