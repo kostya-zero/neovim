@@ -4,7 +4,7 @@ return {
         opts.dashboard = {
             enabled = true,
             preset = {
-                header = [[ Welcome back, Zero. Have a nice day!]],
+                header = "",
             },
             sections = {
                 { section = "header" },

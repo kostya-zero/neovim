@@ -28,6 +28,7 @@ require("lazy").setup({
         { import = "lazyvim.plugins.extras.lang.go" },
         { import = "lazyvim.plugins.extras.lang.json" },
         { import = "lazyvim.plugins.extras.lang.markdown" },
+        { import = "lazyvim.plugins.extras.lang.zig" },
         -- { import = "lazyvim.plugins.extras.editor.mini-files" },
         -- { import = "lazyvim.plugins.extras.lang.nushell" },
         -- { import = "lazyvim.plugins.extras.lang.prisma" },

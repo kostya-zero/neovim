@@ -13,6 +13,7 @@ return {
         enabled = true,
         priority = 1100,
         opts = {
+            transparent = false,
             background = {
                 dark = "jellybeans_muted",
                 light = "jellybeans_muted_light",
