@@ -14,36 +14,38 @@ if not (vim.uv or vim.loop).fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
+-- Current colorscheme
+local scheme = "kanso"
+
 ---@module "lazy"
 ---@type LazyConfig
 require("lazy").setup({
     spec = {
-        { "LazyVim/LazyVim", import = "lazyvim.plugins", opts = { colorscheme = "jellybeans" } },
+        { "LazyVim/LazyVim", import = "lazyvim.plugins", opts = { colorscheme = scheme } },
         { import = "lazyvim.plugins.extras.ai.copilot" },
         { import = "lazyvim.plugins.extras.dap.core" },
         { import = "lazyvim.plugins.extras.editor.outline" },
         -- { import = "lazyvim.plugins.extras.editor.neo-tree" },
         { import = "lazyvim.plugins.extras.formatting.prettier" },
-        { import = "lazyvim.plugins.extras.lang.docker" },
+        -- { import = "lazyvim.plugins.extras.lang.docker" },
         { import = "lazyvim.plugins.extras.lang.go" },
+        { import = "lazyvim.plugins.extras.lang.clangd" },
         { import = "lazyvim.plugins.extras.lang.json" },
         { import = "lazyvim.plugins.extras.lang.markdown" },
-        { import = "lazyvim.plugins.extras.lang.zig" },
         -- { import = "lazyvim.plugins.extras.editor.mini-files" },
         -- { import = "lazyvim.plugins.extras.lang.nushell" },
         -- { import = "lazyvim.plugins.extras.lang.prisma" },
         { import = "lazyvim.plugins.extras.lang.rust" },
-        -- { import = "lazyvim.plugins.extras.lang.sql" },
+        { import = "lazyvim.plugins.extras.lang.sql" },
         { import = "lazyvim.plugins.extras.lang.tailwind" },
         { import = "lazyvim.plugins.extras.lang.toml" },
         { import = "lazyvim.plugins.extras.lang.typescript" },
-        -- { import = "lazyvim.plugins.extras.lang.yaml" },
         { import = "lazyvim.plugins.extras.linting.eslint" },
         { import = "lazyvim.plugins.extras.test.core" },
         { import = "plugins" },
     },
     defaults = {
-        lazy = false,
+        lazy = true,
         version = false, -- always use the latest git commit
     },
     ui = {
@@ -54,7 +56,7 @@ require("lazy").setup({
             not_loaded = "",
         },
     },
-    install = { colorscheme = { "jellybeans", "habamax" } },
+    install = { colorscheme = { scheme, "habamax" } },
     checker = {
         enabled = true, -- check for plugin updates periodically
         notify = false, -- notify on update

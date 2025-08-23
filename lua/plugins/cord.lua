@@ -1,6 +1,6 @@
 return {
     "vyfor/cord.nvim",
-    enabled = true,
+    enabled = false,
     build = ":Cord update",
     opts = {
         editor = {

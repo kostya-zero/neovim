@@ -4,7 +4,7 @@ return {
     keys = {
         {
             "-",
-            "<cmd>Oil --float<cr>",
+            "<cmd>Oil<cr>",
             desc = "Open Oil",
             mode = { "n" },
         },
@@ -43,7 +43,7 @@ return {
         },
         float = {
             padding = 6,
-            max_width = 0.4,
+            max_width = 0.7,
         },
     },
 }
