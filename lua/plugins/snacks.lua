@@ -2,7 +2,7 @@ return {
     "snacks.nvim",
     opts = function(_, opts)
         opts.dashboard = {
-            enabled = true,
+            enabled = false,
             preset = {
                 header = "",
             },
