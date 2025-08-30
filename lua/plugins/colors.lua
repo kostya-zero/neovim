@@ -20,19 +20,4 @@ return {
             },
         },
     },
-    {
-        "webhooked/kanso.nvim",
-        enabled = true,
-        lazy = false,
-        ---@module "kanso"
-        ---@type KansoConfig
-        opts = {
-            compile = true,
-            background = {
-                dark = "zen",
-                light = "pearl",
-            },
-        },
-        priority = 1000,
-    },
 }
