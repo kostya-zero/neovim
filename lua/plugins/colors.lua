@@ -10,7 +10,7 @@ return {
     {
         "wtfox/jellybeans.nvim",
         lazy = false,
-        enabled = true,
+        enabled = false,
         priority = 1100,
         opts = {
             transparent = false,
@@ -19,5 +19,10 @@ return {
                 light = "jellybeans_mono_light",
             },
         },
+    },
+    {
+        "webhooked/kanso.nvim",
+        lazy = false,
+        priority = 1000,
     },
 }

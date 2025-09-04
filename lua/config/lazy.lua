@@ -15,7 +15,7 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 -- Current colorscheme
-local scheme = "jellybeans"
+local scheme = "kanso"
 
 ---@module "lazy"
 ---@type LazyConfig
