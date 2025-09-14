@@ -1,21 +1,48 @@
 return {
-    "folke/snacks.nvim",
-    priority = 1000,
-    lazy = false,
-    ---@module "snacks"
-    ---@type Snacks.Config
-    opts = {
-        bigfile = { enabled = true },
-        dashboard = { enabled = false},
-        explorer = { enabled = false},
-        indent = { enabled = true },
-        input = { enabled = true },
-        picker = { enabled = true },
-        notifier = { enabled = true, style = "minimal" },
-        quickfile = { enabled = true },
-        scope = { enabled = true },
-        scroll = { enabled = false},
-        statuscolumn = { enabled = true },
-        words = { enabled = true },
-    },
+	"folke/snacks.nvim",
+	priority = 1000,
+	lazy = false,
+	---@module "snacks"
+	---@type Snacks.Config
+	opts = {
+		bigfile = { enabled = true },
+		dashboard = { enabled = false },
+		explorer = { enabled = false },
+		indent = { enabled = true },
+		input = { enabled = true },
+		picker = { enabled = true },
+		notifier = { enabled = true, style = "minimal" },
+		quickfile = { enabled = true },
+		scope = { enabled = true },
+		scroll = { enabled = false },
+		statuscolumn = { enabled = true },
+		words = { enabled = true },
+	},
+	keys = {
+		{
+			"<leader>n",
+			function()
+				if Snacks.config.picker and Snacks.config.picker.enabled then
+					Snacks.picker.notifications()
+				else
+					Snacks.notifier.show_history()
+				end
+			end,
+			desc = "Notification History",
+		},
+		{
+			"<leader>un",
+			function()
+				Snacks.notifier.hide()
+			end,
+			desc = "Dismiss All Notifications",
+		},
+		{
+			"<leader>t",
+			function()
+				Snacks.terminal()
+			end,
+			desc = "Open Terminal",
+		},
+	},
 }

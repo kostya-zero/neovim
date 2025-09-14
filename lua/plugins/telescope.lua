@@ -1,5 +1,7 @@
 return {
 	"nvim-telescope/telescope.nvim",
+	cmd = "Telescope",
+	version = false,
 	keys = {
 		{
 			"<leader><space>",
@@ -73,11 +75,14 @@ return {
 				},
 			},
 			defaults = {
+				prompt_prefix = " ",
+				selection_caret = " ",
 				mappings = {
 					i = {
 						["<cr>"] = select_default,
 					},
 					n = {
+						["q"] = actions.close,
 						["<cr>"] = select_default,
 					},
 				},
