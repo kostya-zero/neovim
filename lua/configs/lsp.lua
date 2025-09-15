@@ -51,5 +51,6 @@ vim.lsp.enable({
 	"eslint",
 	"vtsls",
 	"rust_analyzer",
+	"marksman",
 	"tailwindcss",
 })
