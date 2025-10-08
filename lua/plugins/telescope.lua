@@ -17,6 +17,7 @@ return {
 		-- git
 		{ "<leader>gc", "<cmd>Telescope git_commits<CR>", desc = "Commits" },
 		{ "<leader>gs", "<cmd>Telescope git_status<CR>", desc = "Status" },
+		{ "<leader>o", "<cmd>Telescope buffers<CR>", desc = "Open Buffes" },
 		-- search
 		{ '<leader>s"', "<cmd>Telescope registers<cr>", desc = "Registers" },
 		{ "<leader>sa", "<cmd>Telescope autocommands<cr>", desc = "Auto Commands" },

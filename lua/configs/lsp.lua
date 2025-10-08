@@ -41,16 +41,17 @@ vim.diagnostic.config({
 	},
 })
 
-vim.lsp.config("*", {
-	on_attach = on_attach,
-})
-
 vim.lsp.enable({
 	"lua",
 	"gopls",
 	"eslint",
 	"vtsls",
-	"rust_analyzer",
-	"marksman",
+	"css_ls",
+	"clang",
+	"rust",
 	"tailwindcss",
+})
+
+vim.lsp.config("*", {
+	on_attach = on_attach,
 })

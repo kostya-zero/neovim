@@ -25,6 +25,10 @@ return {
 			"gitcommit",
 			"gitignore",
 			"rust",
+			"ron",
+			"css",
+			"scss",
+			"html",
 		},
 		highlight = {
 			enable = true,
