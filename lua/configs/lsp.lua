@@ -47,6 +47,7 @@ vim.lsp.enable({
 	"eslint",
 	"vtsls",
 	"css_ls",
+	"html",
 	"clang",
 	"rust",
 	"tailwindcss",

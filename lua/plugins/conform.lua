@@ -10,6 +10,7 @@ return {
 			typescript = { "prettier", stop_after_first = true },
 			typescriptreact = { "prettier", stop_after_first = true },
 			tsx = { "prettier", stop_after_first = true },
+			mjs = { "prettier", stop_after_first = true },
 			c = { "clang-format" },
 			cpp = { "clang-format" },
 		},

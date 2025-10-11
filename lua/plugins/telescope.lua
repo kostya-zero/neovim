@@ -1,5 +1,11 @@
 return {
 	"nvim-telescope/telescope.nvim",
+	dependencies = {
+		{
+			"nvim-telescope/telescope-fzf-native.nvim",
+			build = "cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && cmake --build build --config Release",
+		},
+	},
 	cmd = "Telescope",
 	version = false,
 	keys = {
@@ -68,6 +74,14 @@ return {
 		telescope.setup({
 			pickers = {
 				find_files = {
+					previewer = false,
+					theme = "dropdown",
+					layout_config = {
+						center = { width = 0.65, height = 0.7 },
+					},
+				},
+				buffers = {
+
 					previewer = false,
 					theme = "dropdown",
 					layout_config = {
