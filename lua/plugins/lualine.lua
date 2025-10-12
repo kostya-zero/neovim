@@ -29,36 +29,13 @@ return {
 			lualine_a = {
 				get_mode(),
 			},
-			lualine_b = { "branch", "diff", "diagnostics" },
-			lualine_c = {
-				{ "filetype", icon_only = true, padding = { left = 1, right = 0 } },
-				{ "filename", padding = 0 },
+			lualine_b = {
+				{ "branch", icon = "", color = { gui = "bold" }, padding = { left = 1, right = 1 } },
+				{ "diff", symbols = { added = "+", modified = "~", removed = "-" } },
+				{ "diagnostics", symbols = { error = " ", warn = " ", info = " ", hint = " " } },
 			},
+			lualine_c = {},
 			lualine_x = {
-				{
-					function()
-						return require("noice").api.status.command.get()
-					end,
-					cond = function()
-						return package.loaded["noice"] and require("noice").api.status.command.has()
-					end,
-					color = function()
-						return { fg = Snacks.util.color("Statement") }
-					end,
-				},
-				-- {
-				-- 	function()
-				-- 		return require("noice").api.status.mode.get()
-				-- 	end,
-				-- 	cond = function()
-				-- 		return package.loaded["noice"] and require("noice").api.status.mode.has()
-				-- 	end,
-				-- 	color = function()
-				-- 		return { fg = Snacks.util.color("Constant") }
-				-- 	end,
-				-- },
-			},
-			lualine_y = {
 				{
 					"location",
 					padding = {
@@ -66,6 +43,9 @@ return {
 						right = 1,
 					},
 				},
+			},
+			lualine_y = {
+				{ "filetype" },
 			},
 			lualine_z = { get_mode() },
 		},
