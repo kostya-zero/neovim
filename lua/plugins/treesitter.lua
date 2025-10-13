@@ -29,6 +29,8 @@ return {
 			"css",
 			"scss",
 			"html",
+			"sql",
+			"dockerfile",
 		},
 		highlight = {
 			enable = true,

@@ -1,6 +1,6 @@
 -- Change this to kanagawa, kanso, lackluster or zenbones
 -- to choose colorscheme
-local colorscheme = "jellybeans"
+local colorscheme = "kanso"
 
 return {
 	{
@@ -9,7 +9,7 @@ return {
 		enabled = colorscheme == "kanso",
 		priority = 1000,
 		config = function()
-			vim.cmd("colorscheme kanso")
+			vim.cmd("colorscheme kanso-zen")
 		end,
 	},
 	{

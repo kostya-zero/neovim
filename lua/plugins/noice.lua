@@ -12,8 +12,11 @@ return {
 				["cmp.entry.get_documentation"] = true, -- requires hrsh7th/nvim-cmp
 			},
 			progress = {
-				enabled = false,
+				enabled = true,
 			},
+		},
+		popupmenu = {
+			enabled = true, -- disable if you use cmp
 		},
 		presets = {
 			bottom_search = true, -- use a classic bottom cmdline for search

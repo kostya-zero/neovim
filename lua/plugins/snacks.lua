@@ -51,7 +51,7 @@ return {
 		},
 		explorer = { enabled = false },
 		indent = { enabled = true },
-		input = { enabled = true },
+		input = { enabled = false },
 		picker = { enabled = false },
 		notifier = { enabled = true, style = "minimal" },
 		quickfile = { enabled = true },
