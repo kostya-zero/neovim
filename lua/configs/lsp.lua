@@ -41,16 +41,19 @@ vim.diagnostic.config({
 	},
 })
 
+vim.env.PATH = vim.fn.stdpath("data") .. "/mason/bin:" .. vim.env.PATH
+
 vim.lsp.enable({
 	"lua",
-	"gopls",
-	"eslint",
-	"vtsls",
+	"rust",
+	"go",
+	"clang",
+	"ts_ls",
+	"tailwind",
+	"svelte_lsp",
+	"eslint_lsp",
 	"css_ls",
 	"html",
-	"clang",
-	"rust",
-	"tailwindcss",
 })
 
 vim.lsp.config("*", {

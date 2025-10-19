@@ -1,5 +1,6 @@
 return {
 	"folke/noice.nvim",
+	enabled = false,
 	event = "VeryLazy",
 	opts = {
 		cmdline = {
@@ -16,7 +17,7 @@ return {
 			},
 		},
 		popupmenu = {
-			enabled = true, -- disable if you use cmp
+			enabled = false, -- disable if you use cmp
 		},
 		presets = {
 			bottom_search = true, -- use a classic bottom cmdline for search

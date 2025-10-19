@@ -6,7 +6,7 @@ return {
 	},
 	{
 		"windwp/nvim-ts-autotag",
-		ft = { "tsx", "html", "typescriptreact", "javascriptreact" },
+		ft = { "tsx", "html", "typescriptreact", "javascriptreact", "svelte" },
 		opts = {},
 	},
 }
