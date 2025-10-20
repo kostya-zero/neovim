@@ -1,6 +1,6 @@
 return {
     "brenoprata10/nvim-highlight-colors",
-    event = "BufReadPre",
+    ft = { "javascript", "html", "css", "scss", "javascriptreact", "typescript", "typescriptreact", "svelte" },
     opts = {
         render = "background",
         enable_hex = true,

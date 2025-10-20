@@ -8,47 +8,7 @@ return {
     opts = {
         bigfile = { enabled = true },
         dashboard = {
-            enabled = true,
-            width = 40,
-            preset = {
-                keys = {
-                    { icon = " ", key = "f", desc = "Find File", action = "<cmd>Telescope find_files<cr>" },
-                    { icon = " ", key = "n", desc = "New File", action = ":ene | startinsert" },
-                    {
-                        icon = " ",
-                        key = "g",
-                        desc = "Find Text",
-                        action = "<cmd>Telescope live_grep<cr>",
-                    },
-                    {
-                        icon = " ",
-                        key = "r",
-                        desc = "Recent Files",
-                        action = ":lua Snacks.dashboard.pick('oldfiles')",
-                    },
-                    {
-                        icon = " ",
-                        key = "c",
-                        desc = "Config",
-                        action = function()
-                            require("telescope.builtin").find_files({ cwd = vim.fn.stdpath("config") })
-                        end,
-                    },
-                    {
-                        icon = "󰒲 ",
-                        key = "L",
-                        desc = "Lazy",
-                        action = ":Lazy",
-                        enabled = package.loaded.lazy ~= nil,
-                    },
-                    { icon = " ", key = "q", desc = "Quit", action = ":qa" },
-                },
-            },
-            sections = {
-                {
-                    section = "keys",
-                },
-            },
+            enabled = false
         },
         explorer = { enabled = false },
         indent = { enabled = true },

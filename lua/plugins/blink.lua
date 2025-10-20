@@ -32,21 +32,15 @@ return {
         },
         sources = {
             default = { "lsp", "path", "snippets", "buffer" },
-            -- providers = {
-            -- 	copilot = {
-            -- 		name = "copilot",
-            -- 		module = "blink-cmp-copilot",
-            -- 		score_offset = 100,
-            -- 		async = true,
-            -- 	},
-            -- },
         },
         fuzzy = { implementation = "prefer_rust_with_warning" },
         signature = {
+            enabled = true,
             window = {
                 winblend = vim.o.pumblend,
             },
         },
+
     },
     opts_extend = { "sources.default" },
 }

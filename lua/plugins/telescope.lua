@@ -1,10 +1,6 @@
 return {
     "nvim-telescope/telescope.nvim",
     dependencies = {
-        -- {
-        -- 	"nvim-telescope/telescope-fzf-native.nvim",
-        -- 	build = "cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && cmake --build build --config Release",
-        -- },
         {
             "nvim-telescope/telescope-ui-select.nvim",
         },
@@ -49,7 +45,7 @@ return {
         { "<leader>sc", "<cmd>Telescope command_history<cr>",           desc = "Command History" },
         { "<leader>sC", "<cmd>Telescope commands<cr>",                  desc = "Commands" },
         { "<leader>sd", "<cmd>Telescope diagnostics bufnr=0<cr>",       desc = "Document Diagnostics" },
-        { "<leader>sD", "<cmd>Telescope diagnostics<cr>",               desc = "Workspace Diagnostics" },
+        { "<leader>d",  "<cmd>Telescope diagnostics<cr>",               desc = "Workspace Diagnostics" },
         { "<leader>sh", "<cmd>Telescope help_tags<cr>",                 desc = "Help Pages" },
         { "<leader>sH", "<cmd>Telescope highlights<cr>",                desc = "Search Highlight Groups" },
         { "<leader>sj", "<cmd>Telescope jumplist<cr>",                  desc = "Jumplist" },
@@ -95,7 +91,7 @@ return {
                     previewer = false,
                     theme = "dropdown",
                     layout_config = {
-                        center = { width = 0.45, height = 0.5 },
+                        center = { width = 0.5, height = 0.6 },
                     },
                 },
                 buffers = {
@@ -143,7 +139,6 @@ return {
                 },
             },
         })
-        -- telescope.load_extension("fzf")
         telescope.load_extension("ui-select")
         telescope.load_extension("file_browser")
     end,
