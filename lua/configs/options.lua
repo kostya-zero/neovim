@@ -15,6 +15,7 @@ vim.opt.mouse = "a"
 
 -- vim.opt.titlestring = '%t%( %M%)%( (%{expand("%:~:h")})%)%a - KansoVim'
 vim.opt.title = true
+vim.opt.termguicolors = true
 vim.opt.autoindent = true
 vim.o.signcolumn = "yes"
 vim.opt.smartindent = true

@@ -24,12 +24,12 @@ vim.diagnostic.config({
     },
 
     signs = {
-        text = {
-            [vim.diagnostic.severity.ERROR] = " ",
-            [vim.diagnostic.severity.WARN] = " ",
-            [vim.diagnostic.severity.HINT] = " ",
-            [vim.diagnostic.severity.INFO] = " ",
-        },
+        -- text = {
+        --     [vim.diagnostic.severity.ERROR] = " ",
+        --     [vim.diagnostic.severity.WARN] = " ",
+        --     [vim.diagnostic.severity.HINT] = " ",
+        --     [vim.diagnostic.severity.INFO] = " ",
+        -- },
     },
     severity_sort = true,
     update_in_insert = false,
@@ -41,12 +41,6 @@ vim.diagnostic.config({
     },
 })
 
-vim.env.PATH = vim.fn.stdpath("data") .. "/mason/bin:" .. vim.env.PATH
-
-local capabilities = vim.lsp.protocol.make_client_capabilities()
-
-capabilities = vim.tbl_deep_extend('force', capabilities, require("blink.cmp").get_lsp_capabilities({}, false))
-
 vim.lsp.enable({
     "lua",
     "rust",
@@ -57,10 +51,11 @@ vim.lsp.enable({
     "svelte_lsp",
     "eslint_lsp",
     "css_ls",
+    "pyright",
     "html",
+    "taplo"
 })
 
 vim.lsp.config("*", {
     on_attach = on_attach,
-    capabilities = capabilities
 })
