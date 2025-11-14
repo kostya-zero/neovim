@@ -10,7 +10,7 @@ return {
     opts = function()
         local config = {
             options = {
-                theme = "kanso",
+                theme = "auto",
                 globalstatus = true,
                 component_separators = { left = "", right = "" },
                 section_separators = { left = "", right = "" },
@@ -33,20 +33,17 @@ return {
                     {
                         "branch",
                         icon = "",
-                        color = { gui = "bold", fg = "#777983" },
                         padding = { left = 1, right = 1 },
                     },
                     {
                         "diagnostics",
                         colored = false,
                         symbols = { error = " ", warn = " ", info = " ", hint = " " },
-                        color = { fg = "#777983" },
                     },
                 },
                 lualine_x = {
                     {
                         "location",
-                        color = { fg = "#777983" },
                         padding = {
                             left = 1,
                             right = 1,
@@ -56,7 +53,6 @@ return {
                         "diff",
                         colored = false,
                         symbols = { added = " ", modified = "󰏫 ", removed = " " },
-                        color = { fg = "#777983" },
                     },
                 },
                 lualine_y = {

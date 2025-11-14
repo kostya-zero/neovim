@@ -9,6 +9,7 @@ return {
         }
     },
     cmd = "Telescope",
+    enabled = false,
     version = false,
     keys = {
         {
@@ -92,6 +93,7 @@ return {
                     theme = "dropdown",
                     layout_config = {
                         center = { width = 0.5, height = 0.6 },
+                        prompt_position = "bottom",
                     },
                 },
                 buffers = {
@@ -139,7 +141,7 @@ return {
                 },
             },
         })
-        telescope.load_extension("ui-select")
+        -- telescope.load_extension("ui-select")
         telescope.load_extension("file_browser")
     end,
 }
