@@ -1,8 +1,6 @@
 vim.g.mapleader = " "
 vim.g.localleader = " "
 
-vim.o.guifont = "Lilex Nerd Font Mono: h12"
-
 vim.opt.fillchars = "fold: ,vert:¦,eob: ,msgsep:?"
 
 vim.opt.encoding = "utf-8"
@@ -15,8 +13,8 @@ vim.opt.mouse = "a"
 
 -- vim.opt.titlestring = '%t%( %M%)%( (%{expand("%:~:h")})%)%a - KansoVim'
 vim.opt.title = true
-vim.opt.termguicolors = true
 vim.opt.autoindent = true
+vim.opt.termguicolors = true
 vim.o.signcolumn = "yes"
 vim.opt.smartindent = true
 vim.opt.hlsearch = true

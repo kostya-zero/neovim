@@ -31,7 +31,7 @@ require("lazy").setup({
 			not_loaded = "",
 		},
 	},
-	install = { colorscheme = { "habamax" } },
+	install = { colorscheme = { "jellybeans-mono", "habamax" } },
 	checker = { enabled = false, notify = false },
 	debug = false,
 	performance = {
