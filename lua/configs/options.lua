@@ -21,7 +21,7 @@ vim.opt.hlsearch = true
 vim.opt.backup = false
 vim.opt.swapfile = false
 vim.opt.showcmd = true
-vim.opt.cmdheight = 1
+vim.opt.cmdheight = 0
 vim.opt.laststatus = 3
 vim.opt.expandtab = true
 vim.opt.scrolloff = 10
@@ -42,5 +42,14 @@ vim.opt.splitright = true
 vim.opt.splitkeep = "cursor"
 vim.opt.clipboard = "unnamedplus"
 vim.opt.mouse = ""
+
+if vim.g.neovide then
+	vim.o.guifont = "JetBrainsMono Nerd Font Mono:h14"
+	vim.g.neovide_refresh_rate = 75
+	vim.g.neovide_cursor_animation_length = 1.25
+	vim.g.neovide_cursor_smooth_blink = true
+	vim.g.neovide_cursor_vfx_mode = "pixiedust"
+	-- vim.g.neovide_profiler = true
+end
 
 vim.opt.formatoptions:append({ "r" })
