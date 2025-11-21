@@ -1,8 +1,2 @@
-vim.loader.enable(true)
-
-require("configs.options")
-require("configs.mappings")
-require("configs.lazy")
-require("configs.lsp")
-
-vim.cmd("colorscheme jellybeans")
+-- bootstrap lazy.nvim, LazyVim and your plugins
+require("config.lazy")
