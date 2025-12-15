@@ -26,6 +26,8 @@ require("lazy").setup({
         { import = "lazyvim.plugins.extras.lang.rust" },
         { import = "lazyvim.plugins.extras.lang.clangd" },
         { import = "lazyvim.plugins.extras.lang.markdown" },
+        { import = "lazyvim.plugins.extras.lang.toml" },
+        { import = "lazyvim.plugins.extras.lang.tailwind" },
         { import = "lazyvim.plugins.extras.editor.outline" },
         { import = "plugins" },
     },

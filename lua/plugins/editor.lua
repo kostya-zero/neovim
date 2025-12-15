@@ -1,4 +1,18 @@
 return {
+    {
+        "vyfor/cord.nvim",
+        lazy = false,
+        event = "VeryLazy",
+        build = ":Cord update",
+        opts = {
+            idle = {
+                enabled = false,
+            },
+            editor = {
+                client = "lazyvim",
+            },
+        },
+    },
     { "wakatime/vim-wakatime", lazy = false },
     {
         "snacks.nvim",

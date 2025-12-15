@@ -14,6 +14,7 @@ return {
         priority = 1000,
         enabled = true,
         opts = {
+            italics = false,
             background = {
                 dark = "jellybeans_mono",
                 light = "jellybeans_mono_light",
