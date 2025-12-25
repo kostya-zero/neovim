@@ -1,7 +1,6 @@
 return {
     {
         "blink.cmp",
-        version = "main",
         opts = function(_, opts)
             opts.sources.providers = nil
             opts.sources.per_filetype = nil
