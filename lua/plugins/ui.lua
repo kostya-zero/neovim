@@ -36,6 +36,7 @@ return {
     -- },
     {
         "b0o/incline.nvim",
+        enabled = false,
         event = "BufReadPost",
         opts = {
             window = {

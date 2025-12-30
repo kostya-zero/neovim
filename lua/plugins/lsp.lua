@@ -3,7 +3,6 @@ return {
         "nvim-lspconfig",
         enabled = true,
         opts = function(_, opts)
-            -- Better support for 3rd-party Lua libraries
             opts.servers.lua_ls.settings.Lua.runtime = { version = "LuaJIT" }
             opts.servers.lua_ls.settings.Lua.workspace.library = {
                 vim.fn.expand("$VIMRUNTIME/lua"),
@@ -15,25 +14,14 @@ return {
     },
     {
         "nvim-lint",
-        enabled = false,
+        enabled = true,
     },
     {
         "mason.nvim",
-        enabled = false,
-        opts = function(_, opts)
-            opts.ensure_installed = {
-                "gopls",
-                "gomodifytags",
-                "impl",
-                "delve",
-                "goimports",
-                "gofumpt",
-            }
-            return opts
-        end,
+        enabled = true,
     },
     {
         "mason-lspconfig.nvim",
-        enabled = false,
+        enabled = true,
     },
 }
