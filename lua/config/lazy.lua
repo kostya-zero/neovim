@@ -15,7 +15,7 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 -- Change it when you want to change theme
-local theme = "catppuccin-mocha"
+local theme = "catppuccin-macchiato"
 
 require("lazy").setup({
     spec = {
