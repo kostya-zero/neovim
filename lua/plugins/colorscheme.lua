@@ -3,7 +3,6 @@ return {
         "craftzdog/solarized-osaka.nvim",
         lazy = true,
         priority = 1000,
-        enabled = false,
         opts = {
             transprarent = false,
         },
@@ -12,7 +11,6 @@ return {
         "WTFox/jellybeans.nvim",
         lazy = false,
         priority = 1000,
-        enabled = true,
         opts = {
             italics = false,
             background = {

@@ -1,15 +1,5 @@
 return {
     {
-        "blink.cmp",
-        opts = function(_, opts)
-            opts.sources.providers = nil
-            opts.sources.per_filetype = nil
-            opts.sources.default = { "lsp", "path", "snippets", "buffer" }
-            return opts
-        end,
-    },
-    { "lazydev.nvim", enabled = false },
-    {
         "monaqa/dial.nvim",
         keys = {
             {

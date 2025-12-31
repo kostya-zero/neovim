@@ -3,7 +3,7 @@ return {
         "vyfor/cord.nvim",
         lazy = false,
         event = "VeryLazy",
-        enabled = false,
+        enabled = true,
         build = ":Cord update",
         opts = {
             idle = {

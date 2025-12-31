@@ -14,8 +14,8 @@ if not (vim.uv or vim.loop).fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
--- Change it when you change theme
-local theme = "jellybeans"
+-- Change it when you want to change theme
+local theme = "catppuccin-mocha"
 
 require("lazy").setup({
     spec = {
@@ -28,6 +28,8 @@ require("lazy").setup({
         { import = "lazyvim.plugins.extras.lang.toml" },
         { import = "lazyvim.plugins.extras.lang.tailwind" },
         { import = "lazyvim.plugins.extras.editor.outline" },
+        { import = "lazyvim.plugins.extras.editor.harpoon2" },
+        { import = "lazyvim.plugins.extras.editor.mini-files" },
         { import = "plugins" },
     },
     defaults = {
