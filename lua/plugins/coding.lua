@@ -1,5 +1,20 @@
 return {
     {
+        "friendly-snippets",
+        enabled = false,
+    },
+    {
+        "saghen/blink.cmp",
+        opts = function(_, opts)
+            -- For some reason, snippets causes input lags. This lags were really annoying,
+            -- and I've figured out it was because of snippets. I want to belive that
+            -- it happens because friendly-snippets has a lot of snippets. Otherwise,
+            -- I don't actually use them so it is not bad for me.
+            opts.sources.default = { "lsp", "path", "buffer" }
+            return opts
+        end,
+    },
+    {
         "monaqa/dial.nvim",
         keys = {
             {

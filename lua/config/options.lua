@@ -6,7 +6,10 @@
 vim.g.lazyvim_blink_main = true
 vim.g.lazyvim_picker = "telescope"
 
--- Enabled 256 colors support
+-- Enable title
+vim.opt.title = true
+
+-- Enable 256 colors support
 vim.opt.termguicolors = true
 
 -- Shell
@@ -31,3 +34,8 @@ vim.opt.mouse = ""
 
 -- Ignore paths
 vim.opt.wildignore:append({ "*/node_modules/*", "*/target/*" })
+
+-- Neovide
+if vim.g.neovide then
+    vim.opt.guifont = "JetBrainsMono Nerd Font Mono:h14"
+end

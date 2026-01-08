@@ -69,6 +69,13 @@ return {
                 desc = "Find Plugin File",
             },
             {
+                "<leader>o",
+                function()
+                    require("telescope.builtin").buffers({})
+                end,
+                desc = "Show opened buffers",
+            },
+            {
                 ";f",
                 function()
                     local builtin = require("telescope.builtin")
@@ -210,6 +217,14 @@ return {
                     initial_mode = "normal",
                     layout_config = {
                         preview_cutoff = 9999,
+                    },
+                },
+                buffers = {
+                    theme = "dropdown",
+                    initial_mode = "normal",
+                    hijack_netrw = true,
+                    layout_config = {
+                        center = { width = 0.55, height = 0.8 },
                     },
                 },
             }
