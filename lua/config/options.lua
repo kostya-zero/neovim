@@ -34,8 +34,3 @@ vim.opt.mouse = ""
 
 -- Ignore paths
 vim.opt.wildignore:append({ "*/node_modules/*", "*/target/*" })
-
--- Neovide
-if vim.g.neovide then
-    vim.opt.guifont = "JetBrainsMono Nerd Font Mono:h14"
-end

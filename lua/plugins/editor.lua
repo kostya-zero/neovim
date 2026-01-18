@@ -34,9 +34,14 @@ return {
                     { section = "startup" },
                 },
             }
-            opts.explorer.enabled = false
             return opts
         end,
+    },
+    {
+        "neo-tree.nvim",
+        keys = {
+            { "<leader>e", false },
+        },
     },
     {
         "brenoprata10/nvim-highlight-colors",
