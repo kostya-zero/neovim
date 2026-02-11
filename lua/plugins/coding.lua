@@ -10,7 +10,8 @@ return {
             -- and I've figured out it was because of snippets. I want to belive that
             -- it happens because friendly-snippets has a lot of snippets. Otherwise,
             -- I don't actually use them so it is not bad for me.
-            opts.sources.default = { "lsp", "path", "buffer" }
+            -- opts.sources.default = { "lsp", "path", "buffer" }
+            opts.sources.default = { "lsp" }
             return opts
         end,
     },
