@@ -5,7 +5,7 @@
 -- LazyVim specific options
 -- vim.g.lazyvim_blink_main = true
 vim.g.lazyvim_picker = "telescope"
-vim.g.snacks_animate = false
+vim.g.snacks_animate = true
 
 -- Enable title
 vim.opt.title = true

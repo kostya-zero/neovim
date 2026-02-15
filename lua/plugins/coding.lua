@@ -16,6 +16,13 @@ return {
         end,
     },
     {
+        "m4xshen/hardtime.nvim",
+        lazy = false,
+        enabled = false,
+        dependencies = { "MunifTanjim/nui.nvim" },
+        opts = {},
+    },
+    {
         "monaqa/dial.nvim",
         keys = {
             {

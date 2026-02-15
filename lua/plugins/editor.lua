@@ -19,6 +19,13 @@ return {
         "snacks.nvim",
         keys = {
             { "<leader>e", false },
+            {
+                "<leader>E",
+                function()
+                    Snacks.explorer()
+                end,
+                { desc = "Snacks explorer" },
+            },
         },
         opts = function(_, opts)
             opts.dashboard = {
@@ -36,12 +43,6 @@ return {
             }
             return opts
         end,
-    },
-    {
-        "neo-tree.nvim",
-        keys = {
-            { "<leader>e", false },
-        },
     },
     {
         "brenoprata10/nvim-highlight-colors",
