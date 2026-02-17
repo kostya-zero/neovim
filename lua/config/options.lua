@@ -3,9 +3,10 @@
 -- Add any additional options here
 
 -- LazyVim specific options
--- vim.g.lazyvim_blink_main = true
+vim.g.lazyvim_blink_main = false
 vim.g.lazyvim_picker = "telescope"
-vim.g.snacks_animate = true
+vim.g.snacks_animate = false
+vim.g.lazyvim_prettier_needs_config = true
 
 -- Enable title
 vim.opt.title = true
@@ -24,17 +25,34 @@ vim.opt.breakindent = true
 vim.opt.autoindent = true
 vim.opt.smartindent = true
 
+-- Disable syntax since Treesitter is doing this
+vim.opt.syntax = "manual"
+
+-- Disable providers for plugins
+vim.g.loaded_python3_provider = 0
+vim.g.loaded_python_provider = 0
+vim.g.loaded_ruby_provider = 0
+vim.g.loaded_node_provider = 0
+vim.g.loaded_perl_provider = 0
+
+-- No wrap lines
+vim.opt.wrap = false
+
 -- Highlight Search
 vim.opt.hlsearch = true
 
 -- Swap and backup
 vim.opt.swapfile = false
+vim.opt.backup = false
 
 -- Disable mouse
 vim.opt.mouse = ""
 
 -- Ignore paths
 vim.opt.wildignore:append({ "*/node_modules/*", "*/target/*" })
+
+-- Enable transparency if it is supported by theme
+vim.g.zero_transparent_theme = true
 
 -- Neovide
 vim.opt.guifont = "IosevkaTerm Nerd Font Mono:h16"

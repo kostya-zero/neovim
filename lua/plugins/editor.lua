@@ -40,6 +40,8 @@ return {
                     -- { icon = " ", title = "Projects", section = "projects", indent = 2, padding = 1 },
                     { section = "startup" },
                 },
+                scroll = { enabled = vim.g.snacks_animate },
+                scope = { enabled = false },
             }
             return opts
         end,
