@@ -13,7 +13,17 @@ vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
     spec = {
-        { "LazyVim/LazyVim", import = "lazyvim.plugins", opts = { colorscheme = "solarized-osaka" } },
+        {
+            "LazyVim/LazyVim",
+            import = "lazyvim.plugins",
+            opts = {
+                colorscheme = "solarized-osaka",
+                news = {
+                    lazyvim = true,
+                    neovim = true,
+                },
+            },
+        },
         { import = "lazyvim.plugins.extras.linting.eslint" },
         { import = "lazyvim.plugins.extras.formatting.prettier" },
         { import = "lazyvim.plugins.extras.lang.typescript" },
@@ -34,6 +44,9 @@ require("lazy").setup({
         notify = false, -- notify on update
     }, -- automatically check for plugin updates
     performance = {
+        cache = {
+            enabled = true,
+        },
         rtp = {
             disabled_plugins = {
                 "2html_plugin",
