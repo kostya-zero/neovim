@@ -2,6 +2,10 @@ return {
     {
         dir = "C:\\Dev\\kanri.nvim",
         name = "kanri.nvim",
-        opts = {},
+        ---@module "kanri"
+        ---@type Kanri.Config
+        opts = {
+            picker = "telescope",
+        },
     },
 }
