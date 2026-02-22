@@ -29,9 +29,6 @@ vim.opt.breakindent = true
 vim.opt.autoindent = true
 vim.opt.smartindent = true
 
--- Disable syntax since Treesitter is doing this
-vim.opt.syntax = "manual"
-
 -- Disable providers for plugins
 vim.g.loaded_python3_provider = 0
 vim.g.loaded_python_provider = 0
@@ -55,11 +52,8 @@ vim.opt.mouse = ""
 -- Ignore paths
 vim.opt.wildignore:append({ "*/node_modules/*", "*/target/*" })
 
--- Enable transparency if it is supported by theme
-vim.g.zero_transparent_theme = true
-
 -- Neovide
-vim.opt.guifont = "IosevkaTerm Nerd Font Mono:h16"
+vim.opt.guifont = "IosevkaTerm Nerd Font Mono:h20"
 vim.g.neovide_position_animation_length = 0
 vim.g.neovide_cursor_animation_length = 0.00
 vim.g.neovide_cursor_trail_size = 0

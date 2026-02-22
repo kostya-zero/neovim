@@ -18,10 +18,6 @@ require("lazy").setup({
             import = "lazyvim.plugins",
             opts = {
                 colorscheme = "solarized-osaka",
-                news = {
-                    lazyvim = true,
-                    neovim = true,
-                },
             },
         },
         { import = "lazyvim.plugins.extras.linting.eslint" },
@@ -31,7 +27,7 @@ require("lazy").setup({
         { import = "lazyvim.plugins.extras.lang.json" },
         { import = "lazyvim.plugins.extras.lang.tailwind" },
         { import = "lazyvim.plugins.extras.lang.go" },
-        -- { import = "lazyvim.plugins.extras.lang.python" },
+        { import = "lazyvim.plugins.extras.lang.python" },
         { import = "plugins" },
     },
     defaults = {
@@ -76,6 +72,7 @@ require("lazy").setup({
                 "compiler",
                 "bugreport",
                 "ftplugin",
+                "syntax",
             },
         },
     },
