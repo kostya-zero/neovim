@@ -41,7 +41,7 @@ require("lazy").setup({
     }, -- automatically check for plugin updates
     performance = {
         cache = {
-            enabled = true,
+            enabled = false,
         },
         rtp = {
             disabled_plugins = {
@@ -59,6 +59,7 @@ require("lazy").setup({
                 "tar",
                 "tarPlugin",
                 "rrhelper",
+                "tutor",
                 "spellfile_plugin",
                 "vimball",
                 "vimballPlugin",
