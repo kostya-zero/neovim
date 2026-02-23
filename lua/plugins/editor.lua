@@ -1,9 +1,8 @@
 return {
     {
         "vyfor/cord.nvim",
-        lazy = false,
         event = "VeryLazy",
-        enabled = true,
+        enabled = false,
         build = ":Cord update",
         opts = {
             idle = {
@@ -14,7 +13,7 @@ return {
             },
         },
     },
-    { "wakatime/vim-wakatime", lazy = false },
+    { "wakatime/vim-wakatime", lazy = false, enabled = false },
     {
         "snacks.nvim",
         keys = {

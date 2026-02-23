@@ -3,7 +3,3 @@
 -- Add any additional keymaps here
 
 local map = vim.keymap.set
-
-map("n", "D", function()
-    vim.diagnostic.open_float()
-end, { desc = "Open floating diagnostics" })

@@ -3,6 +3,7 @@ return {
         "WTFox/jellybeans.nvim",
         lazy = false,
         priority = 1000,
+        enabled = false,
         opts = {
             italics = false,
             transparent = false,
