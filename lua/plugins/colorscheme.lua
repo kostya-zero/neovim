@@ -3,7 +3,6 @@ return {
         "WTFox/jellybeans.nvim",
         lazy = false,
         priority = 1000,
-        enabled = false,
         opts = {
             italics = false,
             transparent = false,
@@ -14,9 +13,18 @@ return {
         },
     },
     {
+        "catppuccin",
+        enabled = false,
+    },
+    {
+        "tokyonight.nvim",
+        enabled = false,
+    },
+    {
         "craftzdog/solarized-osaka.nvim",
         lazy = false,
         priority = 1000,
+        enabled = false,
         opts = {
             transparent = true,
         },

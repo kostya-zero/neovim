@@ -17,7 +17,7 @@ require("lazy").setup({
             "LazyVim/LazyVim",
             import = "lazyvim.plugins",
             opts = {
-                colorscheme = "solarized-osaka",
+                colorscheme = "jellybeans",
             },
         },
         { import = "lazyvim.plugins.extras.linting.eslint" },
@@ -28,6 +28,7 @@ require("lazy").setup({
         { import = "lazyvim.plugins.extras.lang.tailwind" },
         { import = "lazyvim.plugins.extras.lang.go" },
         { import = "lazyvim.plugins.extras.lang.python" },
+        { import = "lazyvim.plugins.extras.lang.sql" },
         { import = "plugins" },
     },
     defaults = {
